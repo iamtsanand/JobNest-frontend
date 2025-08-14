@@ -39,7 +39,7 @@ const Benefits = () => {
     <section className="py-16 bg-job-lightGray">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold text-job-darkBlue mb-4">Why Choose SeekSpark</h2>
+          <h2 className="text-3xl font-bold text-job-darkBlue mb-4">Why Choose JobNest</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
             We're more than just a job board. Our platform provides tools and resources to help you succeed in your career journey.
           </p>
