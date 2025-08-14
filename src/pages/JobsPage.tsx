@@ -6,7 +6,7 @@ import { api } from "@/lib/api.js";
 import { Job } from "@/types/userProfile";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import JobCard from "@/components/Jobcard";
+import JobCard from "@/components/JobCard";
 import JobFilters from "@/components/JobFilters";
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
@@ -30,10 +30,12 @@ const JobsPage = () => {
   useEffect(() => {
     if (isLoading) return;
     if (error) {
-      toast({
-        title: "Error fetching Jobs!",
-        description: error instanceof Error ? error.message : "Something went wrong.",
-      });
+      toast(
+        <div>
+          <strong>Error fetching Jobs!</strong>
+          <div>{error instanceof Error ? error.message : "Something went wrong."}</div>
+        </div>
+      );
     }
   }, [isLoading, error]);
   
